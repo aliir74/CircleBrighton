@@ -1,0 +1,44 @@
+.row {
+	color: white;
+}
+
+#header {
+	background-color: #f78a2d;
+	height: 125px;
+}
+
+.col-md-3 {
+	height: 507px;
+}
+
+#col1 {
+	background-color: #65b449;
+}
+
+#col2 {
+	background-color: #6db743;
+}
+
+#col3 {
+	background-color: #7cb743;
+}
+
+#col4 {
+	background-color: #8ab743;
+}
+
+#col5 {
+	background-color: #9abf41;
+}
+
+#col6 {
+	background-color: #c9db37;
+}
+
+#col7 {
+	background-color: #d9e134;
+}
+
+#col8 {
+	background-color: #f7eb33;
+}
