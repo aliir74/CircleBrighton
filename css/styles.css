@@ -2,22 +2,19 @@
          height: 100%;
  }
 
-#test {
-	 //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#test2 {
-//	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   //  box-shadow: 10px 10px 5px grey;
-}
-
 .navlink {
 	color: white;
 }
 
-#navcol1 {
-	color: white;
+.navlink:hover{
+	font-weight: bold;
+	text-decoration:  none;
 }
+
+.navlink:focus {
+	text-decoration:  none;
+}
+
 
 .row {
 	color: white;
@@ -38,6 +35,9 @@
 	//box-shadow: 0px 10px 10px #888888;
 }
 
+.contentcol {
+	transition: 1s;
+}
 
 #header {
 	position: relative;
@@ -62,13 +62,102 @@
 
 }
 
-/*
-
-#fakediv {
-	box-shadow: 0 0 30px black;
-	z-index: +10 !important;	
+#navlink1:hover {
+	color: #65b449;
 }
-*/
+
+#navlink2:hover {
+	color: #6db743;
+}
+
+#navlink3:hover {
+	color: #7cb743;
+}
+
+#navlink4:hover {
+	color: #8ab743;
+}
+
+#navlink5:hover {
+	color: #9abf41;
+}
+
+#navlink6:hover {
+	color: #c9db37;
+}
+
+#navlink7:hover {
+	color: #d9e134;
+}
+
+#navlink8:hover {
+	color: #f7eb33;
+}
+
+#navlink1:focus {
+	color: #65b449;
+}
+
+#navlink2:focus {
+	color: #6db743;
+}
+
+#navlink3:focus {
+	color: #7cb743;
+}
+
+#navlink4:focus {
+	color: #8ab743;
+}
+
+#navlink5:focus {
+	color: #9abf41;
+}
+
+#navlink6:focus {
+	color: #c9db37;
+}
+
+#navlink7:focus {
+	color: #d9e134;
+}
+
+#navlink8:focus {
+	color: #f7eb33;
+}
+
+#topofnavcol1 {
+	background-color: #65b449;
+}
+
+#topofnavcol2 {
+	background-color: #6db743;
+}
+
+#topofnavcol3 {
+	background-color: #7cb743;
+}
+
+#topofnavcol4 {
+	background-color: #8ab743;
+}
+
+#topofnavcol5 {
+	background-color: #9abf41;
+}
+
+#topofnavcol6 {
+	background-color: #c9db37;
+}
+
+#topofnavcol7 {
+	background-color: #d9e134;
+}
+
+#topofnavcol8 {
+	background-color: #f7eb33;
+}
+
 
 #content {
 	//margin-top: 5px;
@@ -80,33 +169,57 @@
 }
 
 #contentcol1 {
+	position: relative;
 	background-color: #65b449;
 }
 
 #contentcol2 {
+	position: relative;
 	background-color: #6db743;
 }
 
 #contentcol3 {
+	position: relative;
 	background-color: #7cb743;
 }
 
 #contentcol4 {
+	position: relative;
 	background-color: #8ab743;
 }
 
 #contentcol5 {
+	position: relative;
 	background-color: #9abf41;
 }
 
 #contentcol6 {
+	position: relative;
 	background-color: #c9db37;
 }
 
 #contentcol7 {
+	position: relative;
 	background-color: #d9e134;
 }
 
 #contentcol8 {
+	position: relative;
 	background-color: #f7eb33;
 }
+
+#imglogo {
+	//background-color: white !important;
+}
+/*
+.overlay{
+  position: relative;
+  //top: 0;
+  //left: 0;
+  //width: 200%;
+  width: 400px;
+  //height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5) !important; 
+}
+*/

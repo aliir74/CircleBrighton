@@ -15,7 +15,7 @@
 <body>
 	<div class="container-fluid">
 		<div id="header" class="row">
-			<div class="col-md-6">logo</div>
+			<div id="logo" class="col-md-6"><img id="imglogo" scr="../assets/logo-sm.png" alt="logo" width="100" height="100"></div>
 			<div class="col-md-6">
 				<h3>Welcome to the New You!</h3>
 				<p>
@@ -31,32 +31,32 @@
 		<div id="topofnavbar" class="row">
 		      <div class="col-md-6">
 		            <div class="row">
-		                <div id="contentcol1" class="col-md-3">
+		                <div id="topofnavcol1" class="col-md-3">
 		                            
 		                </div>
-		                <div id="contentcol2" class="col-md-3">
+		                <div id="topofnavcol2" class="col-md-3">
 		                            
 		                </div>
-		                <div id="contentcol3" class="col-md-3">
+		                <div id="topofnavcol3" class="col-md-3">
 		                            
 		                </div>
-		                <div id="contentcol4" class="col-md-3">
+		                <div id="topofnavcol4" class="col-md-3">
 		                            
 		                </div>
 		          </div>
 		    </div> 
 		    <div class="col-md-6">
 		            <div class="row">
-		                <div id="contentcol5" class="col-md-3">
+		                <div id="topofnavcol5" class="col-md-3">
 		                             
 		                </div>
-		                <div id="contentcol6" class="col-md-3">
+		                <div id="topofnavcol6" class="col-md-3">
 		                            
 		                </div>
-		                <div id="contentcol7" class="col-md-3">
+		                <div id="topofnavcol7" class="col-md-3">
 		                            
 		                </div>
-		                <div id="contentcol8" class="col-md-3">
+		                <div id="topofnavcol8" class="col-md-3">
 		                            
 		                </div>
 		          </div>
@@ -67,41 +67,41 @@
 		      <div id="test" class="col-md-6">
 		            <div class="row">
 		                <div id="navcol1" class="navcol col-md-3">
-		                    <a class="navlink" href="#">Ethos</a>
+		                    <a id="navlink1" class="navlink" href="#" onclick="openNav()">Ethos</a>
 		                </div>
 		                <div id="navcol2" class="navcol col-md-3">
-		                    <a class="navlink" href="#">Mind</a>
+		                    <a id="navlink2" class="navlink" href="#">Mind</a>
 		                </div>
 		                <div id="navcol3" class="navcol col-md-3">
-		                    <a class="navlink" href="#">Coach</a>
+		                    <a id="navlink3" class="navlink" href="#">Coach</a>
 		                </div>
 		                <div id="navcol4" class="navcol col-md-3">
-		                    <a class="navlink" href="#">Fitness</a>
+		                    <a id="navlink4" class="navlink" href="#">Fitness</a>
 		                </div>
 		          </div>
 		    </div> 
 		    <div class="col-md-6">
 		            <div class="row">
 		                <div id="navcol5" class="navcol col-md-3">
-		                	<a class="navlink" href="#">Nutrition</a>
+		                	<a id="navlink5" class="navlink" href="#">Nutrition</a>
 		                </div>
 		                <div id="navcol6" class="navcol col-md-3">
-		                	<a class="navlink" href="#">Wellbeing</a>
+		                	<a id="navlink6" class="navlink" href="#">Wellbeing</a>
 		                </div>
 		                <div id="navcol7" class="navcol col-md-3">
-		                	<a class="navlink" href="#">Community</a>
+		                	<a id="navlink7" class="navlink" href="#">Community</a>
 		                </div>
 		                <div id="navcol8" class="navcol col-md-3">
-		                	<a class="navlink" href="#">Contact Us</a>
+		                	<a id="navlink8" class="navlink" href="#">Contact Us</a>
 		                </div>
 		          </div>
 		    </div>
 		</div>
 
 		<div id="content" class="row">
-		      <div id="test2" class="col-md-6">
+		      <div class="col-md-6">
 		            <div class="row">
-		                <div id="contentcol1" class="contentcol col-md-3">
+		                <div id="contentcol1" class="overlay contentcol col-md-3">
 		                </div>
 		                <div id="contentcol2" class="contentcol col-md-3">
 		                </div>
@@ -126,6 +126,18 @@
 		</div>
 	</div>
 
+
+<script>
+function openNav() {
+    //document.getElementById("contentcol1").style.z-index=10;
+    document.getElementById("contentcol1").style.width = "50%";
+
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 </body>
 
