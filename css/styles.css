@@ -40,8 +40,11 @@
 
 
 #header {
+	position: relative;
+	z-index: +1;
 	background-color: #f78a2d;
-	height: 23%;
+	height: 30%;
+	text-align: left;
 }
 
 #topofnavbar {
@@ -70,7 +73,7 @@
 #content {
 	//margin-top: 5px;
 	//z-index: -1;
-	height: 71%;
+	height: 64%;
 	position: relative;
 	z-index: -1;
 
