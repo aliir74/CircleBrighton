@@ -36,6 +36,8 @@
 }
 
 .contentcol {
+	//position: fixed;
+	//width: 12.5%;
 	transition: 1s;
 }
 
@@ -171,8 +173,8 @@
 	position: fixed;
 	width: 12.5%;
 	background-color: #65b449;
-	transition: 0.5s;
-	z-index: 1; 
+	//transition: 0.5s;
+	z-index: 10;
 	//z-index: 20 !important;
 }
 
@@ -192,21 +194,27 @@
 #contentcol2 {
 	//position: relative;
 	position: fixed;
+	width: 12.5%;
 	left: 12.5%;
+	z-index: 9;
 	background-color: #6db743;
 }
 
 #contentcol3 {
 	//position: relative;
 	position: fixed;
+	width: 12.5%;
 	left: 25%;
+	z-index: 8;
 	background-color: #7cb743;
 }
 
 #contentcol4 {
 	//position: relative;
 	position: fixed;
+	width: 12.5%;
 	left: 37.5%;
+	z-index: 7;
 	background-color: #8ab743;
 }
 

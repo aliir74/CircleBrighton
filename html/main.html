@@ -67,16 +67,16 @@
 		      <div id="test" class="col-md-6">
 		            <div class="row">
 		                <div id="navcol1" class="navcol col-md-3">
-		                    <a id="navlink1" class="navlink" href="#" onclick="openNav()">Ethos</a>
+		                    <a id="navlink1" class="navlink" href="#" onclick="openNav(1)">Ethos</a>
 		                </div>
 		                <div id="navcol2" class="navcol col-md-3">
-		                    <a id="navlink2" class="navlink" href="#">Mind</a>
+		                    <a id="navlink2" class="navlink" href="#" onclick="openNav(2)">Mind</a>
 		                </div>
 		                <div id="navcol3" class="navcol col-md-3">
-		                    <a id="navlink3" class="navlink" href="#">Coach</a>
+		                    <a id="navlink3" class="navlink" href="#" onclick="openNav(3)">Coach</a>
 		                </div>
 		                <div id="navcol4" class="navcol col-md-3">
-		                    <a id="navlink4" class="navlink" href="#">Fitness</a>
+		                    <a id="navlink4" class="navlink" href="#" onclick="openNav(4)">Fitness</a>
 		                </div>
 		          </div>
 		    </div> 
@@ -128,11 +128,16 @@
 
 
 <script>
-function openNav() {
+function openNav(x) {
     //document.getElementById("contentcol1").style.zIndex="10";
     //alert(document.getElementById("contentcol1").style.zIndex);
     //document.getElementById("contentcol2").style.displat="none";
-    document.getElementById("contentcol1").style.width = "25%";
+    for(i = 1; i <= 4; i++) {
+    	if(x != i) {
+    		document.getElementById("contentcol"+i).style.width="12.5%";
+    	}
+    }
+    document.getElementById("contentcol"+x).style.width = "25%";
   //  alert(document.getElementById("content").style.zIndex);
    // document.getElementById("contentcol1").style.background-color = "white";
 
