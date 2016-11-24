@@ -83,13 +83,13 @@
 		    <div class="col-md-6">
 		            <div class="row">
 		                <div id="navcol5" class="navcol col-md-3">
-		                	<a id="navlink5" class="navlink" href="#">Nutrition</a>
+		                	<a id="navlink5" class="navlink" href="#" onclick="openNav(5)">Nutrition</a>
 		                </div>
 		                <div id="navcol6" class="navcol col-md-3">
-		                	<a id="navlink6" class="navlink" href="#">Wellbeing</a>
+		                	<a id="navlink6" class="navlink" href="#" onclick="openNav(6)">Wellbeing</a>
 		                </div>
 		                <div id="navcol7" class="navcol col-md-3">
-		                	<a id="navlink7" class="navlink" href="#">Community</a>
+		                	<a id="navlink7" class="navlink" href="#" onclick="openNav(7)">Community</a>
 		                </div>
 		                <div id="navcol8" class="navcol col-md-3">
 		                	<a id="navlink8" class="navlink" href="#">Contact Us</a>
@@ -129,18 +129,16 @@
 
 <script>
 function openNav(x) {
-    //document.getElementById("contentcol1").style.zIndex="10";
-    //alert(document.getElementById("contentcol1").style.zIndex);
-    //document.getElementById("contentcol2").style.displat="none";
-    for(i = 1; i <= 4; i++) {
-    	if(x != i) {
-    		document.getElementById("contentcol"+i).style.width="12.5%";
-    	}
-    }
-    document.getElementById("contentcol"+x).style.width = "25%";
-  //  alert(document.getElementById("content").style.zIndex);
-   // document.getElementById("contentcol1").style.background-color = "white";
-
+    if(document.getElementById("contentcol"+x).style.width!="25%"){
+	    for(i = 1; i <= 8; i++) {
+	    //	if(x != i) {
+	    		document.getElementById("contentcol"+i).style.width="12.5%";
+	    //	}
+	    }
+	    document.getElementById("contentcol"+x).style.width = "25%";
+	} else {
+		document.getElementById("contentcol"+x).style.width="12.5%";
+	}
 }
 
 function closeNav() {

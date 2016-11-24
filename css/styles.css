@@ -219,22 +219,38 @@
 }
 
 #contentcol5 {
-	position: relative;
+	//position: relative;
+	position: fixed;
+	width: 12.5%;
+	left: 50%;
+	z-index: 6;
 	background-color: #9abf41;
 }
 
 #contentcol6 {
-	position: relative;
+	//position: relative;
+	position: fixed;
+	width: 12.5%;
+	left: 62.5%;
+	z-index: 5;
 	background-color: #c9db37;
 }
 
 #contentcol7 {
-	position: relative;
+	//position: relative;
+	position: fixed;
+	width: 12.5%;
+	left: 75%;
+	z-index: 4;
 	background-color: #d9e134;
 }
 
 #contentcol8 {
-	position: relative;
+	//position: relative;
+	position: fixed;
+	width: 12.5%;
+	left: 87.5%;
+	z-index:3;
 	background-color: #f7eb33;
 }
 
