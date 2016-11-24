@@ -260,6 +260,14 @@
 	//background-color: white !important;
 }
 
+#logo {
+	
+}
+
+#ethosimg {
+	margin-top: 65%;
+}
+
 /*
 .overlay {
 	background-color: #65b449;
@@ -283,13 +291,14 @@
     position: fixed; /* Stay in place */
     //position: absolute;
     z-index: 1; /* Sit on top */
-    //left: 0;
+    left: 0;
     top: 36%;
-    right: 0%;
+    ..right: 0%;
     background-color: rgba(247, 237, 51, 0.8);
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     //transition: left 1s linear, margin-left 1s ease-out;
+    //transition: left 300ms ease-out;
 
 }
 
