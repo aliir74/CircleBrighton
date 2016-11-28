@@ -330,26 +330,25 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
+#tmp {
+	position: relative;
+	overflow: scroll;
+	height: 100px;
+}
 .textcontent {
+	//max-height: 100px !important;
+	height: 100% !important;
 	text-align: left;
 	position: absolute;
+	//position: relative !important;
+	//overflow: scroll;
+	//width: 100%;
 	//left: 5%;
 	//top: 2%;
 	padding: 2%;
 	z-index: 100;
 	display: inline-block !important;
-	//display: none;
 	opacity: 0;
-
-/*
-	-webkit-transition: opacity 1s ease-in-out;
-       -moz-transition: opacity 1s ease-in-out;
-        -ms-transition: opacity 1s ease-in-out;
-         -o-transition: opacity 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
-            */
-         //   transition: 1s;
-
 }
 
 #mindgradient {
