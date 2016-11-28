@@ -299,7 +299,9 @@
 }
 
 */
+
 .gradient {
+	position: relative;
 	margin-top: 20%;
 	width: 100%;
 }
@@ -328,14 +330,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-#ethosimg {
-
-
-	
-	height: auto;
-	width: 100%;
-	//position: relative;
-	//z-index: -100;
+.textcontent {
+	position: absolute;
+	//left: 5%;
+	//top: 2%;
+	padding: 2%;
+	//display: inline-block;
+	display: none;
+	//visibility: hidden;
 }
 
 #mindgradient {
@@ -433,21 +435,21 @@ background: -moz-linear-gradient(to top, rgba(155,191,65
 	height: 100%;
   display:inline-block;
 
-background: -moz-linear-gradient(to top, rgba(201,2019,55
-, 1.0) 0%, rgba(201,2019,55
+background: -moz-linear-gradient(to top, rgba(201,219,55
+, 1.0) 0%, rgba(201,219,55
 , 1.0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,2019,55,1)), color-stop(100%,rgba(201,2019,55,0.01))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(to top, rgba(201,2019,55
-, 1.0) 0%,rgba(201,2019,55
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,219,55,1)), color-stop(100%,rgba(201,219,55,0.01))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(to top, rgba(201,219,55
+, 1.0) 0%,rgba(201,219,55
 , 1.00) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(to top, rgba(201,2019,55
-, 1.0) 0%,rgba(201,2019,55
+  background: -o-linear-gradient(to top, rgba(201,219,55
+, 1.0) 0%,rgba(201,219,55
 , 1.0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(to top, rgba(201,2019,55
-, 1.0) 0%,rgba(201,2019,55
+  background: -ms-linear-gradient(to top, rgba(201,219,55
+, 1.0) 0%,rgba(201,219,55
 , 1.0) 100%); /* IE10+ */
-  background: linear-gradient(bottom, rgba(201,2019,55
-, 0.01) 0%,rgba(201,2019,55
+  background: linear-gradient(bottom, rgba(201,219,55
+, 0.01) 0%,rgba(201,219,55
 , 0.01) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
@@ -495,7 +497,7 @@ background: -moz-linear-gradient(to top, rgba(201,2019,55
 .img {
 	//margin-top: 64%;
   	position:relative;
-  	z-index:-1;
+  	z-index:-100;
   	display:block;
   	height: auto;
   	width: 100%;

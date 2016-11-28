@@ -20,7 +20,7 @@
 			</div>
 			<div class="col-md-6">
 				<h3>Welcome to the New You!</h3>
-				<p>
+				<p id="welcometext">
 					The Circle is a unique multi discipline Health &amp; Well Being centre on the Portslade sea front delivering everything that you need for total fitness of your mind and body.</br>
 					It incorporates fitness studios, gym, complementary therapies, food and nutrition, osteopathy, hydrotherapy and podiatry. It also houses screening, monitoring, presentation and teaching facilities to help inform and provide every required discipline in the correct sequence as assessed on a 1:1 personalised basis by our trained Circle Coaches. After all, we are what we think, do and eat!
 
@@ -104,26 +104,34 @@
 		      <div class="col-md-6">
 		            <div class="row">
 		                <div id="contentcol1" class="overlay contentcol col-md-3">
-						<!--
-		                <img id="ethosimg" src="http://thecirclebrighton.com/wp-content/uploads/s02_seedling.jpg" width="100%" height="40%">
-		                -->
-		                <!--<div id="ethosimg"></div>-->
+		                	<div hidden="true" class="textcontent" id="ethoscontent">
+		                		Our Ethos is exactly what it says on the box! We believe that we are what we think, do and eat. We strive to help our members and the community to understand the profound relationship between our mind body and nutrition.
+		                	</div>
 			                <div class="gradient" id="ethosgradient">
 
 			                	<img class="img-rounded img" id="ethosimg" src="assets/ethos-crop.jpg" />
 			                </div>
 		                </div>
 		                <div id="contentcol2" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="mindcontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="mindgradient">
 		                		<img class="img-rounded img" id="imgmind" src="assets/mind-crop.jpg" />
 		                	</div>
 		                </div>
 		                <div id="contentcol3" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="coachcontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="coachgradient">
 		                		<img class="img-rounded img" id="imgcoach" src="assets/coach-crop.jpg" />
 		                	</div>
 		                </div>
 		                <div id="contentcol4" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="fitnesscontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="fitnessgradient">
 		                		<img class="img-rounded img" id="imgfitness" src="assets/fitness-crop.jpg" />
 		                	</div>
@@ -133,16 +141,25 @@
 		    <div class="col-md-6">
 		            <div class="row">
 		                <div id="contentcol5" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="nutritioncontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="nutritiongradient">
 		                		<img class="img-rounded img" id="imgnutrition" src="assets/nutrition-crop.jpg" />
 		                	</div>
 		                </div>
 		                <div id="contentcol6" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="wellbeingcontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="wellbeinggradient">
 		                		<img class="img-rounded img" id="imgwellbeing" src="assets/wellbeing-crop.jpg" />
 		                	</div>
 		                </div>
 		                <div id="contentcol7" class="contentcol col-md-3">
+		                	<div hidden="true" class="textcontent" id="communitycontent">
+		                		ali
+		                	</div>
 		                	<div class="gradient" id="communitygradient">
 		                		<img class="img-rounded img" id="imgcommunity" src="assets/community-crop.jpg" />
 		                	</div>
@@ -153,16 +170,9 @@
 		    </div>
 		</div>
 	</div>
+
 	 <!-- The overlay -->
 	<div id="ContactUs" class="overlay">
-<!--
-	  <div class="overlay-content">
-	    <a href="#">About</a>
-	    <a href="#">Services</a>
-	    <a href="#">Clients</a>
-	    <a href="#">Contact</a>
-	  </div>
-	  -->
 	  <div class="overlay-content row">
 	  	<div class="col-md-3">
 	  		<h2>What's next?</h2>
@@ -250,24 +260,34 @@
 
 	<script>
 	function openNav(x) {
-
+		//alert(columnToString(1)+"content");
 		//one column was opend, user wants open another column
+		var contenttextclass = document.getElementsByClassName("textcontent");
 	    if((x != 8 && document.getElementById("contentcol"+x).style.width!="25%")
 	    	||
 	    	(x == 8 && document.getElementById("ContactUs").style.width!="100%")){
 		    for(i = 1; i <= 7; i++) {
 		    	document.getElementById("contentcol"+i).style.width="12.5%";
+		    	contenttextclass[i-1].style.display = "none";
+		    	
 		    }
+		    //alert("t1");
 		    document.getElementById("ContactUs").style.width="0%";
+
 		    //alert(document.getElementById("ContactUs").style.width);
-		    if(x != 8)
+		    if(x != 8) {
 		    	document.getElementById("contentcol"+x).style.width = "25%";
-		    else
+		    	document.getElementById(columnToString(x)+"content").style.display = "inline-block";
+		    }
+		    else {
 		    	document.getElementById("ContactUs").style.width="100%";
+		    }
 		} //user wants close opened column
 		else {
-			if(x != 8)
+			if(x != 8) {
 		    	document.getElementById("contentcol"+x).style.width = "12.5%";
+		    	document.getElementById(columnToString(x)+"content").style.display = "none";
+			}
 		    else
 		    	document.getElementById("ContactUs").style.width="0%";
 		}
@@ -275,6 +295,38 @@
 	/* Open when someone clicks on the span element */
 	function openContactUs() {
     	document.getElementById("ContactUs").style.width = "100%";
+	}
+
+	function columnToString(x) {
+		var ans;
+		switch (x) {
+			case 1:
+				ans = "ethos";
+				break;
+			case 2:
+				ans = "mind";
+				break;
+			case 3:
+				ans = "coach";
+				break;
+			case 4:
+				ans = "fitness";
+				break;
+			case 5:
+				ans = "nutrition";
+				break;
+			case 6:
+				ans = "wellbeing";
+				break;
+			case 7:
+				ans = "community";
+				break;
+			default:
+				ans = "contactus";
+				break;
+		};
+		return ans;
+
 	}
 	
 	</script>
