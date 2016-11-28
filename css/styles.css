@@ -266,11 +266,13 @@
 }
 
 #imglogo {
-	//background-color: white !important;
+	margin-top: 4%;
+	width: 33%;
+	height: auto;
 }
 
 #logo {
-	
+	padding: 0;
 }
 
 /*
@@ -430,7 +432,7 @@ background: -moz-linear-gradient(to top, rgba(155,191,65
 #wellbeinggradient {
 	height: 100%;
   display:inline-block;
-  
+
 background: -moz-linear-gradient(to top, rgba(201,2019,55
 , 1.0) 0%, rgba(201,2019,55
 , 1.0) 100%); /* FF3.6+ */
