@@ -36,8 +36,9 @@
 }
 
 .contentcol {
-	//position: fixed;
-	//width: 12.5%;
+	//position: fixed !important;
+	position: absolute !important;
+	width: 25% !important;
 	transition: 0.5s;
 	padding: 0;
 }
@@ -172,7 +173,7 @@
 #contentcol1 {
 	//position: relative;
 	position: fixed;
-	width: 12.5%;
+	//width: 12.5%;
 	background-color: #65b449;
 	//transition: 0.5s;
 	z-index: 10;
@@ -197,7 +198,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 12.5%;
+	left: 25%;
 	z-index: 9;
 	background-color: #6db743;
 	padding: 0;
@@ -207,7 +208,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 25%;
+	left: 50%;
 	z-index: 8;
 	background-color: #7cb743;
 	padding: 0;
@@ -217,7 +218,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 37.5%;
+	left: 75%;
 	z-index: 7;
 	background-color: #8ab743;
 	padding: 0;
@@ -227,7 +228,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 50%;
+	left: 0%;
 	z-index: 6;
 	background-color: #9abf41;
 	padding: 0;
@@ -237,7 +238,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 62.5%;
+	left: 25%;
 	z-index: 5;
 	background-color: #c9db37;
 	padding: 0;
@@ -247,7 +248,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 75%;
+	left: 50%;
 	z-index: 4;
 	background-color: #d9e134;
 	padding: 0;
@@ -257,7 +258,7 @@
 	//position: relative;
 	position: fixed;
 	width: 12.5%;
-	left: 87.5%;
+	left: 75%;
 	z-index:3;
 	background-color: #f7eb33;
 	transition: right 1s !important;
@@ -330,11 +331,19 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-#tmp {
+
+
+#tmp1 {
 	position: relative;
-	overflow: scroll;
-	height: 100px;
+	//overflow: scroll;
+	height: 10px;
 }
+
+#tmp2 {
+	//position: relative;
+	overflow: scroll;
+}
+
 .textcontent {
 	//max-height: 100px !important;
 	height: 100% !important;
