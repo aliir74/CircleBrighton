@@ -361,14 +361,12 @@
                 if(document.getElementById("contentcol"+i).style.width!="25%") {
                     document.getElementById("contentcol"+i).style.width="25%";
                     $("#"+columnToString(i)+"content").delay(0).animate({"opacity": "0"}, 100);
-                   // document.getElementById(columnToString(i)+"content").style.display = "none";
                 }
 
             }
             document.getElementById("ContactUs").style.width="0%";
             if(x != 8) {
                 document.getElementById("contentcol"+x).style.width = "50%";
-                //document.getElementById(columnToString(x)+"content").style.display = "inline-block";
                 $("#"+columnToString(x)+"content").delay(300).animate({"opacity": "1"}, 700);
 
             }
@@ -380,16 +378,10 @@
             if(x != 8) {
                 document.getElementById("contentcol"+x).style.width = "25%";
                 $("#"+columnToString(x)+"content").delay(0).animate({"opacity": "0"}, 100);
-                //document.getElementById(columnToString(x)+"content").style.display = "none";
             }
             else
                 document.getElementById("ContactUs").style.width="0%";
         }
-    }
-
-	/* Open when someone clicks on the span element */
-    function openContactUs() {
-        document.getElementById("ContactUs").style.width = "100%";
     }
 
     function columnToString(x) {
