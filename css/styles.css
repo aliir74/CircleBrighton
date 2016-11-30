@@ -552,19 +552,13 @@ body, html, .container-fluid, .row {
 	/* Height & width depends on how you want to reveal the overlay (see JS below) */
 	height: 74%;
 	width: 0;
-//width: 100%;
 	position: fixed; /* Stay in place */
-//position: absolute;
 	z-index: 1000; /* Sit on top */
-	left: 0;
 	top: 36%;
-..right: 0%;
+    right: 0;
 	background-color: rgba(247, 237, 51, 0.8);
 	overflow: hidden; /* Disable horizontal scroll */
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-//transition: left 1s linear, margin-left 1s ease-out;
-//transition: left 300ms ease-out;
-
 }
 
 .form-group {
@@ -664,7 +658,7 @@ p, ul, ol {
 */
 
 .item:hover .item-overlay.left {
-	left: 0;
+	//left: 0;
 }
 
 /*
